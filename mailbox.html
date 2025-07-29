@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailbox</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./tree_in_paddle.png" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="resources/style.css">
+    <style>
+        :root {
+            --bgColor: #effb85; /* New background color for this specific HTML */
+        }
+    </style>
+    <!--LINK JQUERY-->
+  </head>
+
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+
+    
+
+    <a href="#popup" style="display: block; text-align: center">
+        <img src="resources/enveloppe.jpg" style="width:150px; height:auto; margin-top: 40px; margin-bottom: 20px;">
+    </a>
+    
+    <div id="title">
+      Bienvenue sur la boîte mail de Titaku !
+    </div>
+
+    <div id="links">
+      <p>
+        Entrez le mot de passe pour accéder aux messages :
+      </p> 
+      <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin: 20px 0;">
+        <input type="text" id="codeInput" placeholder="Enter code" style="padding: 8px 12px; border-radius: 5px; border: 1px solid #888; font-size: 1rem;">
+        <button id="codeSubmit" style="padding: 8px 18px; border-radius: 5px; border: none; background: #e24a4a; color: #fff; font-size: 1rem; cursor: pointer; transition: background 0.2s;">Submit</button>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+        Indice : nom du dernier animal de compagnie de Titaku
+      </div> 
+
+      
+
+
+</div>
+<script type="text/javascript" src="script.js"></script>
+<script>
+  document.getElementById('codeSubmit').onclick = function() {
+    var code = document.getElementById('codeInput').value.trim();
+    if (code === 'Nougatine' || code === 'nougatine') {
+      // window.open('invitation.html', '_blank');
+    } else {
+      alert('Mauvais mot de passe. Essaye encore !');
+    }
+  };
+</script>
+</body>
+
+
+</html>
+
